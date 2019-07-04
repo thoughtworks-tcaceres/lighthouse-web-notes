@@ -13,3 +13,5 @@ This repository contains all of the notes taken by [Tyler](https://github.com/ty
 
 
 var obj = {something: 123, newthing: 321} ---> delete obj.newthing --> obj = {something: 123}
+
+When data is sent across the web using HTTP request/responses, the Media Type for JSON data is application/json (compared to text/html for HTML). It is set via the Content-Type HTTP response header.
