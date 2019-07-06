@@ -39,3 +39,12 @@ Classes have data in the form of value properties and behaviour in the form of m
 Classes can inherit behaviour from other classes using the extends keyword
 Subclasses can override methods that are inherited in their superclass
 JavaScript also gives us get and set keywords to more cleverly define methods that are data getters and setters
+
+#Promises
+##4 states
+- fulfilled (resolved) :it worked
+- rejected: it didn't work
+- pending: still waiting...
+settled: something happened! (either resolved or rejected)
+
+
