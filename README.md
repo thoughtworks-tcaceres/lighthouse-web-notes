@@ -59,3 +59,7 @@ MX: Mail Exchange record specifies where email gets sent to
 CNAME: Canonical Name, an alias for another hostname
 AAAA: similar to A, but uses IPv6, 128-bit address
 
+Web Server: Node.js
+Middleware: Express
+Template Engine: EJS
+
