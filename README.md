@@ -94,3 +94,12 @@ TRACE	RFC 7231	No	Yes	Yes	Yes	No
 PATCH	RFC 5789	Yes	Yes	No	No	No
 
 The order of route definitions matters! The GET /urls/new route needs to be defined before the GET /urls/:id route. Routes defined earlier will take precedence, so if we place this route after the /urls/:id definition, any calls to /urls/new will be handled by app.get("/urls/:id", ...) because Express will think that new is a route parameter. A good rule of thumb to follow is that routes should be ordered from most specific to least specific.
+
+Method 2: Use an escape function
+Alternatively, you could use a function to escape some text, and then use it inside .html() or $(). Here is such a function (it also makes use of .createTextNode()):
+
+const escape =  function(str) {
+  let div = document.createElement('div');
+  div.appendChild(document.createTextNode(str));
+  return div.innerHTML;
+}
