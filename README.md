@@ -140,3 +140,16 @@ If you guessed the number, stop. You found it!
 If the guess was too low, set minminm, i, n to be one larger than the guess.
 If the guess was too high, set maxmaxm, a, x to be one smaller than the guess.
 Go back to step two.
+
+
+
+Big O notation, written as O(), describes how the number of steps in an algorithm scales relative to it's input. As we increase the amount of data, does the algorithm grow linearly, exponentially, or logarithmically?
+
+When we evaluate an algorithm using Big O notation, there are three main things to remember:
+
+We only care about arbitrarily large input.
+What does the run time of binary search look like when we give it an array of one million items?
+We drop the non-dominant terms.
+When our algorithm had a running time of (n^2+n)/2, it was the n^2 that was hurting us. So we'll just forget about everything else.
+We drop constant terms.
+If you graph (n^3)/2 or (n^3)*2, it has pretty much the same curve as n^3, so let's just get rid of the constant 2.
