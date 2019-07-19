@@ -103,3 +103,40 @@ const escape =  function(str) {
   div.appendChild(document.createTextNode(str));
   return div.innerHTML;
 }
+
+
+******conversion
+
+let result = 0;
+
+for (let i = 0; i < array.length; i++) {
+  let number = array[i];
+  result += number;
+}
+
+console.log(result);
+**********
+
+let result = 0; // 1
+
+for (
+  let i = 0; // 1
+  i < array.length; // n + 1
+  i++ // n
+) {
+  let number = array[i]; // n
+  result += number; // n
+}
+
+console.log(result); // 1
+
+*****
+
+guessing game algorithm pseudocode:
+Here's a step-by-step description of using binary search to play the guessing game:
+Let min = 1 min=1m, i, n, equals, 1 and max = nmax=nm, a, x, equals, n.
+Guess the average of maxmaxm, a, x and minminm, i, n, rounded down so that it is an integer.
+If you guessed the number, stop. You found it!
+If the guess was too low, set minminm, i, n to be one larger than the guess.
+If the guess was too high, set maxmaxm, a, x to be one smaller than the guess.
+Go back to step two.
