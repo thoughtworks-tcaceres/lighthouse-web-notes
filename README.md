@@ -158,4 +158,6 @@ If you graph (n^3)/2 or (n^3)*2, it has pretty much the same curve as n^3, so le
 Logarithmic O(log n)
 If the number of operations that an algorithm has to do is directly proportional to the logarithm of the size of the input, then that algorithm runs in logarithmic time.
 
+## Databases
 Edgar F. Codd, the computer scientist who layed down the theoretical basis of relational databases, called this step of removing repetitive data across columns the first normal form (1NF).
+-->normalization
