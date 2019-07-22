@@ -161,3 +161,6 @@ If the number of operations that an algorithm has to do is directly proportional
 ## Databases
 Edgar F. Codd, the computer scientist who layed down the theoretical basis of relational databases, called this step of removing repetitive data across columns the first normal form (1NF).
 -->normalization
+
+
+## POSTGRES SQL
