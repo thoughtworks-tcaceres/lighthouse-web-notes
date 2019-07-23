@@ -164,3 +164,38 @@ Edgar F. Codd, the computer scientist who layed down the theoretical basis of re
 
 
 ## POSTGRES SQL
+
+for loop? 
+
+SELECT continent, name, area
+FROM world x
+WHERE area >= ALL
+(
+SELECT area
+FROM world y
+where x.continent = y.continent and y.area > 0
+)
+
+Find the largest country (by area) in each continent, show the continent, the name and the area:
+
+SELECT name, continent, population
+FROM  world x
+WHERE 25000000 > ALL (
+SELECT population
+FROM world y
+WHERE x.continent = y.continent)
+
+Find the continents where all countries have a population <= 25000000. Then find the names of the countries associated with these continents. Show name, continent and population.
+
+
+SELECT name, continent
+FROM world x
+WHERE population >= (
+SELECT population*3
+FROM world y
+WHERE y.continent = x.continent and y.name != x.name
+ORDER BY population DESC
+LIMIT 1
+)
+
+Some countries have populations more than three times that of any of their neighbours (in the same continent). Give the countries and continents.
