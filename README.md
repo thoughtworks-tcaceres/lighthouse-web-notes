@@ -199,3 +199,14 @@ LIMIT 1
 )
 
 Some countries have populations more than three times that of any of their neighbours (in the same continent). Give the countries and continents.
+
+*****
+Give a distinct list of the stops which may be reached from 'Craiglockhart' by taking one bus, including 'Craiglockhart' itself, offered by the LRT company. Include the company and bus no. of the relevant services.
+
+SELECT DISTINCT bstop.name, a.company, a.num
+FROM route a
+JOIN route b ON (a.company = b.company AND a.num = b.num)
+JOIN stops astop ON (a.stop = astop.id)
+JOIN stops bstop ON (b.stop = bstop.id)
+WHERE astop.name = 'Craiglockhart'
+
